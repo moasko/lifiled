@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIFI LED — Éclairer et connecter l'Afrique par la lumière</title>
+  <meta name="description" content="LIFI LED conçoit des solutions solaires intelligentes qui éclairent, connectent et informent les zones rurales d'Afrique grâce à la technologie Li-Fi : la transmission de données par la lumière." />
+  <meta name="theme-color" content="#0A0E17" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LIFI LED — La lumière qui connecte l'Afrique" />
+  <meta property="og:description" content="Éclairage solaire intelligent + internet par Li-Fi + contenus éducatifs. Une solution 3-en-1 pour l'Afrique rurale." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="brand" aria-label="LIFI LED accueil">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+            <circle cx="16" cy="16" r="6" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+              <path d="M16 2v4M16 26v4M2 16h4M26 16h4M6 6l3 3M23 23l3 3M26 6l-3 3M9 23l-3 3"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__text">LIFI<span>LED</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#probleme">Le défi</a>
+        <a href="#solution">Solution</a>
+        <a href="#produits">Produits</a>
+        <a href="#technologie">Technologie</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact" class="btn btn--sm btn--solid">Contactez-nous</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <a id="top"></a>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/media/poteau.jpg" aria-hidden="true">
+      <source src="assets/media/lifiled.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__beams" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="container hero__inner">
+      <p class="eyebrow reveal">Startup Li-Fi · Énergie solaire · Afrique</p>
+      <h1 class="hero__title reveal">
+        Éclairer et connecter l'Afrique,<br />
+        <span class="grad">c'est notre devoir.</span>
+      </h1>
+      <p class="hero__lead reveal">
+        LIFI LED transforme la lumière en réseau. Une solution solaire <strong>3-en-1</strong> qui
+        éclaire les zones reculées, y apporte l'internet par <em>Li-Fi</em>, et diffuse des contenus
+        éducatifs et agricoles — sans câble, sans réseau électrique.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#produits" class="btn btn--solid btn--lg">Découvrir nos produits</a>
+        <a href="#technologie" class="btn btn--ghost btn--lg">
+          Comprendre le Li-Fi
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <dl class="hero__stats reveal">
+        <div>
+          <dt class="counter" data-target="600" data-suffix=" M+">0</dt>
+          <dd>Africains sans accès à l'électricité</dd>
+        </div>
+        <div>
+          <dt class="counter" data-target="1" data-suffix=" Md+">0</dt>
+          <dd>Africains sans accès à Internet</dd>
+        </div>
+        <div>
+          <dt>3<span class="unit">-en-1</span></dt>
+          <dd>Éclairer · Connecter · Informer</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Énergie solaire</span><span>•</span>
+      <span>Transmission par la lumière</span><span>•</span>
+      <span>Villes intelligentes</span><span>•</span>
+      <span>Connectivité rurale</span><span>•</span>
+      <span>Éducation numérique</span><span>•</span>
+      <span>Agriculture connectée</span><span>•</span>
+      <span>Énergie solaire</span><span>•</span>
+      <span>Transmission par la lumière</span><span>•</span>
+      <span>Villes intelligentes</span><span>•</span>
+      <span>Connectivité rurale</span><span>•</span>
+      <span>Éducation numérique</span><span>•</span>
+      <span>Agriculture connectée</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ===================== PROBLÈME ===================== -->
+  <section class="section problem" id="probleme">
+    <div class="container grid-2">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--dark">Le défi</p>
+        <h2 class="section__title">Deux fractures qui freinent tout un continent.</h2>
+        <p class="section__lead">
+          En Afrique rurale, l'obscurité et la déconnexion vont de pair. Sans électricité, pas
+          d'école le soir, pas de soins, pas de commerce numérique. Sans internet, pas d'accès au
+          savoir, aux marchés, ni aux services essentiels.
+        </p>
+        <p class="muted">
+          LIFI LED s'attaque aux deux problèmes à la fois, avec une seule infrastructure autonome.
+        </p>
+      </div>
+
+      <div class="problem__cards">
+        <article class="stat-card reveal">
+          <div class="stat-card__num">600M+</div>
+          <h3>Sans lumière</h3>
+          <p>Plus de 600 millions d'Africains vivent encore sans accès fiable à l'électricité.</p>
+        </article>
+        <article class="stat-card reveal">
+          <div class="stat-card__num">1Md+</div>
+          <h3>Sans réseau</h3>
+          <p>Plus d'un milliard de personnes restent privées d'un accès internet de qualité.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUTION 3-EN-1 ===================== -->
+  <section class="section solution" id="solution">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Notre approche</p>
+        <h2 class="section__title">Une seule solution. Trois missions.</h2>
+        <p class="section__lead center">
+          Chaque équipement LIFI LED est un point d'énergie, de connexion et de savoir. Il fonctionne
+          en autonomie totale grâce au solaire, et communique par la lumière.
+        </p>
+      </div>
+
+      <div class="node-graph reveal">
+        <svg viewBox="0 0 560 400" role="img" aria-label="Schéma animé reliant les trois missions — Éclairer, Connecter et Informer — autour de la solution centrale LIFI LED">
+          <!-- Liens -->
+          <g>
+            <line class="ng-link ng-link--radiate" x1="280" y1="195" x2="110" y2="110"/>
+            <line class="ng-link ng-link--radiate" x1="280" y1="195" x2="450" y2="110" style="animation-delay:.3s"/>
+            <line class="ng-link ng-link--radiate" x1="280" y1="195" x2="280" y2="330" style="animation-delay:.6s"/>
+            <line class="ng-link ng-link--e" x1="110" y1="110" x2="450" y2="110"/>
+            <line class="ng-link ng-link--c" x1="450" y1="110" x2="280" y2="330" style="animation-delay:.4s"/>
+            <line class="ng-link ng-link--i" x1="280" y1="330" x2="110" y2="110" style="animation-delay:.8s"/>
+          </g>
+
+          <!-- Éclairer -->
+          <g>
+            <circle class="ng-halo ng-halo--e" cx="110" cy="110" r="38"/>
+            <circle class="ng-core ng-core--e" cx="110" cy="110" r="38"/>
+            <g class="ng-ic ng-ic--e" transform="translate(98,98)">
+              <path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 4 10.5c-.7.6-1 1-1 1.9V16H9v-.6c0-.9-.3-1.3-1-1.9A6 6 0 0 1 12 3Z"/>
+            </g>
+            <text class="ng-label" x="110" y="44">Éclairer</text>
+          </g>
+
+          <!-- Connecter -->
+          <g>
+            <circle class="ng-halo ng-halo--c" cx="450" cy="110" r="38" style="animation-delay:.9s"/>
+            <circle class="ng-core ng-core--c" cx="450" cy="110" r="38"/>
+            <g class="ng-ic ng-ic--c" transform="translate(438,98)">
+              <path d="M5 12.5a10 10 0 0 1 14 0M8 15.5a6 6 0 0 1 8 0"/>
+              <circle cx="12" cy="18.5" r="1.5" style="fill:currentColor;stroke:none"/>
+            </g>
+            <text class="ng-label" x="450" y="44">Connecter</text>
+          </g>
+
+          <!-- Informer -->
+          <g>
+            <circle class="ng-halo ng-halo--i" cx="280" cy="330" r="38" style="animation-delay:1.7s"/>
+            <circle class="ng-core ng-core--i" cx="280" cy="330" r="38"/>
+            <g class="ng-ic ng-ic--i" transform="translate(268,318)">
+              <path d="M4 5h16v12H13l-4 3v-3H4z"/>
+              <path d="M8 9h8M8 12h5"/>
+            </g>
+            <text class="ng-label" x="280" y="390">Informer</text>
+          </g>
+
+          <!-- Hub central -->
+          <g>
+            <circle class="ng-halo ng-halo--h" cx="280" cy="195" r="46" style="animation-delay:.4s"/>
+            <circle class="ng-core ng-core--h" cx="280" cy="195" r="46"/>
+            <g class="ng-ic--h" transform="translate(264,167)">
+              <circle cx="16" cy="16" r="5.5" fill="currentColor"/>
+              <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M16 4v3M16 25v3M4 16h3M25 16h3M7 7l2 2M23 23l2 2M25 7l-2 2M9 23l-2 2"/>
+              </g>
+            </g>
+            <text class="ng-hub-label" x="280" y="212">LIFI LED</text>
+          </g>
+        </svg>
+        <p class="node-graph__cap">L'énergie <b>alimente</b> le réseau, qui <b>diffuse</b> le savoir — trois missions, un même flux continu.</p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <div class="pillar__icon" data-icon="light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 4 10.5c-.7.6-1 1-1 1.9V16H9v-.6c0-.9-.3-1.3-1-1.9A6 6 0 0 1 12 3Z"/></svg>
+          </div>
+          <h3>Éclairer</h3>
+          <p>Des projecteurs LED haute performance alimentés par le soleil illuminent villages, routes et espaces communs — jusqu'à 10 heures d'autonomie.</p>
+        </article>
+
+        <article class="pillar reveal">
+          <div class="pillar__icon" data-icon="connect">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5a10 10 0 0 1 14 0M8 15.5a6 6 0 0 1 8 0"/><circle cx="12" cy="18.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Connecter</h3>
+          <p>La technologie Li-Fi transforme le faisceau lumineux en canal internet haut débit. La lumière devient réseau, sans onde radio ni infrastructure lourde.</p>
+        </article>
+
+        <article class="pillar reveal">
+          <div class="pillar__icon" data-icon="inform">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v12H13l-4 3v-3H4z"/><path d="M8 9h8M8 12h5"/></svg>
+          </div>
+          <h3>Informer</h3>
+          <p>Des contenus éducatifs et agricoles dynamiques sont diffusés localement, pour soutenir l'apprentissage et améliorer les rendements des cultures.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUITS ===================== -->
+  <section class="section products" id="produits">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Nos produits</p>
+        <h2 class="section__title">Un écosystème matériel complet.</h2>
+        <p class="section__lead center">Du foyer individuel à la borne collective, chaque appareil s'assemble pour bâtir des territoires intelligents.</p>
+      </div>
+
+      <div class="products__grid">
+
+        <article class="product reveal">
+          <div class="product__badge">Foyer</div>
+          <div class="product__art"><img src="assets/media/prod-kit-solaire.webp" alt="Remise d'un kit solaire Home Lighting à un habitant, entouré de villageois" loading="lazy" /></div>
+          <h3>Kit Solaire Individuel</h3>
+          <p>Un kit d'autonomie énergétique pensé pour le foyer : produisez votre propre lumière et alimentez vos petits appareils, où que vous soyez.</p>
+          <ul class="product__specs">
+            <li>100 % solaire</li>
+            <li>Installation simple</li>
+            <li>Autonomie domestique</li>
+          </ul>
+        </article>
+
+        <article class="product product--feature reveal">
+          <div class="product__badge product__badge--hot">Phare</div>
+          <div class="product__art"><img src="assets/media/poteau.jpg" alt="Lampadaire solaire LIFI LED illuminant un espace de village la nuit" loading="lazy" /></div>
+          <h3>Lampadaire Intelligent</h3>
+          <p>Le cœur du réseau. Un lampadaire solaire connecté qui éclaire, capte son environnement et diffuse l'internet par Li-Fi.</p>
+          <ul class="product__specs product__specs--grid">
+            <li><b>100–120 W</b><span>Projecteur LED</span></li>
+            <li><b>10 h</b><span>d'autonomie</span></li>
+            <li><b>Li-Fi</b><span>Module intégré</span></li>
+            <li><b>Capteurs</b><span>Luminosité &amp; présence</span></li>
+          </ul>
+          <p class="product__perk">✦ Un mois d'accès internet offert</p>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__badge">Intérieur</div>
+          <div class="product__art"><img src="assets/media/post-installation.webp" alt="Unité de contrôle et batterie du système d'éclairage intelligent LIFI LED" loading="lazy" /></div>
+          <h3>Smart Lamp LED</h3>
+          <p>Une lampe LED intelligente pour l'intérieur, qui combine éclairage de qualité et point d'accès Li-Fi discret pour la maison ou la salle de classe.</p>
+          <ul class="product__specs">
+            <li>Éclairage connecté</li>
+            <li>Point d'accès Li-Fi</li>
+            <li>Faible consommation</li>
+          </ul>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__badge">Collectif</div>
+          <div class="product__art"><img src="assets/media/village-enfant.jpg" alt="Habitants d'un village connectés autour d'un ordinateur portable grâce au Li-Fi" loading="lazy" /></div>
+          <h3>Borne Li-Fi</h3>
+          <p>Une borne collective qui distribue un internet très haut débit à partir d'une source lumineuse — idéale pour les places de village, écoles et centres de santé.</p>
+          <ul class="product__specs">
+            <li>Haut débit par la lumière</li>
+            <li>Usage communautaire</li>
+            <li>Sans câblage réseau</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECHNOLOGIE / LI-FI ===================== -->
+  <section class="section tech" id="technologie">
+    <div class="container grid-2 grid-2--tech">
+      <div class="tech__visual reveal" aria-hidden="true">
+        <div class="lifi-scene">
+          <div class="lifi-lamp"></div>
+          <div class="lifi-cone"></div>
+          <div class="lifi-signal"><span></span><span></span><span></span></div>
+          <div class="lifi-device">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="eyebrow">La technologie</p>
+        <h2 class="section__title">Le Li-Fi : quand la lumière transporte les données.</h2>
+        <p class="section__lead">
+          Le Li-Fi (<em>Light Fidelity</em>) module l'intensité d'une LED des millions de fois par
+          seconde — invisible pour l'œil — pour encoder de l'information. Un capteur la reçoit et la
+          reconvertit en données. La même lumière qui éclaire vous connecte.
+        </p>
+
+        <ol class="steps">
+          <li class="reveal"><span>01</span><div><h4>Le soleil alimente</h4><p>Les panneaux rechargent la batterie qui fait fonctionner la LED en continu.</p></div></li>
+          <li class="reveal"><span>02</span><div><h4>La LED module</h4><p>Le module Li-Fi fait vibrer la lumière pour y inscrire un flux de données.</p></div></li>
+          <li class="reveal"><span>03</span><div><h4>L'appareil reçoit</h4><p>Un récepteur capte le signal lumineux et rétablit la connexion internet.</p></div></li>
+        </ol>
+
+        <div class="tech__tags">
+          <span>Sans onde radio</span>
+          <span>Sécurisé</span>
+          <span>Haut débit</span>
+          <span>Écologique</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VIDÉO ===================== -->
+  <section class="section film" id="film">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">En images</p>
+        <h2 class="section__title">LIFI LED, sur le terrain.</h2>
+        <p class="section__lead center">Découvrez notre technologie à l'œuvre dans les villages : l'énergie, la lumière et la connexion qui changent des vies.</p>
+      </div>
+      <div class="film__frame reveal">
+        <video controls preload="metadata" poster="assets/media/visuel-lifiled.webp" playsinline>
+          <source src="assets/media/lifiled.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture vidéo.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RÉALISATIONS ===================== -->
+  <section class="section realisations" id="realisations">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Sur le terrain</p>
+        <h2 class="section__title">Des réalisations, pas des promesses.</h2>
+      </div>
+
+      <div class="cases">
+        <article class="case reveal">
+          <div class="case__media"><img src="assets/media/brahimakro.jpg" alt="La maternelle de Brahimakro éclairée la nuit par un lampadaire solaire, entourée d'enfants" loading="lazy" /><span class="case__tag">Déploiement</span></div>
+          <div class="case__body">
+            <h3>Brahimakro</h3>
+            <p class="case__quote">« Un succès partagé ! »</p>
+            <p>Un village équipé et éclairé, où l'énergie propre et la connectivité changent le quotidien des habitants.</p>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <div class="case__media"><img src="assets/media/village-2.jpeg" alt="Remise officielle de kits solaires individuels aux familles d'un village" loading="lazy" /><span class="case__tag">Foyers</span></div>
+          <div class="case__body">
+            <h3>Kit Solaire Individuel</h3>
+            <p class="case__quote">« Un sourire éclairé ! »</p>
+            <p>Des familles qui accèdent pour la première fois à une lumière fiable et autonome, directement chez elles.</p>
+          </div>
+        </article>
+
+        <article class="case reveal case--vision">
+          <div class="case__body">
+            <p class="eyebrow">Notre vision</p>
+            <h3>Des villages aux villes intelligentes.</h3>
+            <p>Nous voulons faciliter l'émergence technologique des zones rurales africaines : donner accès à une information numérique de haute qualité, transformer les localités en villes intelligentes et stimuler le développement économique, durablement.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta-band">
+    <img class="cta-band__bg" src="assets/media/visuel-lifiled.webp" alt="" aria-hidden="true" loading="lazy" />
+    <div class="container cta-band__inner reveal">
+      <h2>Bâtissons ensemble l'Afrique connectée.</h2>
+      <p>Collectivité, ONG, école ou entreprise — parlons de votre projet d'éclairage et de connectivité.</p>
+      <a href="#contact" class="btn btn--solid btn--lg">Démarrer une conversation</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container grid-2 grid-2--contact">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section__title">Joignez-nous.</h2>
+        <p class="section__lead">Une question, un partenariat, une demande de déploiement ? Notre équipe vous répond du lundi au vendredi.</p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span>
+            <div><b>Email</b><a href="mailto:infos@lifi-led.ci">infos@lifi-led.ci</a></div>
+          </li>
+          <li>
+            <span class="contact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+            <div><b>Téléphone</b><a href="tel:+22501079044">+225 01 07 90 44</a></div>
+          </li>
+          <li>
+            <span class="contact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><b>Adresse</b><span>28 BP 942 · Abidjan, Côte d'Ivoire</span></div>
+          </li>
+          <li>
+            <span class="contact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><b>Horaires</b><span>Du lundi au vendredi · 08h00 – 18h00</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.com" required />
+        </div>
+        <div class="field">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" placeholder="Partenariat, déploiement, information…" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--solid btn--lg btn--block">Envoyer le message</button>
+        <p class="form__note" id="formNote" hidden>Merci ! Votre message a bien été préparé. Nous vous répondrons rapidement.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="none"><circle cx="16" cy="16" r="6" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 2v4M16 26v4M2 16h4M26 16h4M6 6l3 3M23 23l3 3M26 6l-3 3M9 23l-3 3"/></g></svg>
+          </span>
+          <span class="brand__text">LIFI<span>LED</span></span>
+        </a>
+        <p>Éclairer et connecter l'Afrique par la lumière. Énergie solaire, Li-Fi et savoir, réunis dans une seule solution durable.</p>
+      </div>
+
+      <nav class="footer__col">
+        <h4>Explorer</h4>
+        <a href="#solution">Solution 3-en-1</a>
+        <a href="#produits">Produits</a>
+        <a href="#technologie">Technologie Li-Fi</a>
+        <a href="#realisations">Réalisations</a>
+      </nav>
+
+      <nav class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:infos@lifi-led.ci">infos@lifi-led.ci</a>
+        <a href="tel:+22501079044">+225 01 07 90 44</a>
+        <span>28 BP 942 · Abidjan</span>
+        <span>Lun – Ven · 08h – 18h</span>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> LIFI LED — Tous droits réservés.</span>
+      <span class="footer__made">Conçu pour l'Afrique connectée.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
